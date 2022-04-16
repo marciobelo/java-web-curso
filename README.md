@@ -1,11 +1,16 @@
 # Container banco
 
 ```
-$ docker run --rm --name mysql -v mysql:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=segredo -d mariadb:10.4.13
+# para persistencia
+$ docker run --rm --name mysql -v mysql:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=javawebcurso -d mariadb:10.4.13
+# nao pesistente
+$ docker run --rm --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=javawebcurso -d mariadb:10.4.13
 $ mysql --protocol=tcp -u root -p
+# criar esquemas e load de dados
 ```
 
 # No Windows, ao conectar no MySQL
+
 - Se aparecer a mensagem
 
 ```
