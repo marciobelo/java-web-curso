@@ -1,4 +1,12 @@
-# Container banco
+# Java Web Curso
+
+## Iniciar
+
+- criar banco
+- mvn install
+- mvn tomcat7:run
+
+## Container banco
 
 ```
 # para persistencia
@@ -9,7 +17,7 @@ $ mysql --protocol=tcp -u root -p
 # criar esquemas e load de dados
 ```
 
-# No Windows, ao conectar no MySQL
+## No Windows, ao conectar no MySQL
 
 - Se aparecer a mensagem
 
